@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED18E8B42B2797FD008A49AF /* HomeFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18E8B32B2797FD008A49AF /* HomeFlight.swift */; };
+		ED18E8B62B279867008A49AF /* HomeFlightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18E8B52B279867008A49AF /* HomeFlightRouter.swift */; };
+		ED18E8B82B279896008A49AF /* HomeFlightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18E8B72B279896008A49AF /* HomeFlightInteractor.swift */; };
+		ED18E8BA2B2798AE008A49AF /* HomeFlightRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18E8B92B2798AE008A49AF /* HomeFlightRemoteDataManager.swift */; };
+		ED18E8BC2B2798C9008A49AF /* HomeFlightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18E8BB2B2798C9008A49AF /* HomeFlightPresenter.swift */; };
+		ED18E8BF2B279947008A49AF /* HomeFlightProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED18E8BE2B279946008A49AF /* HomeFlightProtocols.swift */; };
+		ED18E8C12B279F05008A49AF /* HomeFlight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED18E8C02B279F05008A49AF /* HomeFlight.storyboard */; };
 		ED77496C2B26C15F0012F560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77496B2B26C15F0012F560 /* AppDelegate.swift */; };
 		ED77496E2B26C15F0012F560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77496D2B26C15F0012F560 /* SceneDelegate.swift */; };
 		ED7749702B26C15F0012F560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77496F2B26C15F0012F560 /* ViewController.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED18E8B32B2797FD008A49AF /* HomeFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlight.swift; sourceTree = "<group>"; };
+		ED18E8B52B279867008A49AF /* HomeFlightRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightRouter.swift; sourceTree = "<group>"; };
+		ED18E8B72B279896008A49AF /* HomeFlightInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightInteractor.swift; sourceTree = "<group>"; };
+		ED18E8B92B2798AE008A49AF /* HomeFlightRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightRemoteDataManager.swift; sourceTree = "<group>"; };
+		ED18E8BB2B2798C9008A49AF /* HomeFlightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightPresenter.swift; sourceTree = "<group>"; };
+		ED18E8BE2B279946008A49AF /* HomeFlightProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightProtocols.swift; sourceTree = "<group>"; };
+		ED18E8C02B279F05008A49AF /* HomeFlight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeFlight.storyboard; sourceTree = "<group>"; };
 		ED7749682B26C15F0012F560 /* AMDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED77496B2B26C15F0012F560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED77496D2B26C15F0012F560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +51,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED18E8AD2B27978C008A49AF /* HomeFlight */ = {
+			isa = PBXGroup;
+			children = (
+				ED18E8BD2B27992D008A49AF /* Protocols */,
+				ED18E8B22B2797C9008A49AF /* Router */,
+				ED18E8B12B2797C0008A49AF /* Entity */,
+				ED18E8B02B2797AE008A49AF /* Presenter */,
+				ED18E8AF2B2797A1008A49AF /* Interactor */,
+				ED18E8AE2B27979A008A49AF /* View */,
+			);
+			path = HomeFlight;
+			sourceTree = "<group>";
+		};
+		ED18E8AE2B27979A008A49AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED18E8B32B2797FD008A49AF /* HomeFlight.swift */,
+				ED18E8C02B279F05008A49AF /* HomeFlight.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED18E8AF2B2797A1008A49AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				ED18E8B72B279896008A49AF /* HomeFlightInteractor.swift */,
+				ED18E8B92B2798AE008A49AF /* HomeFlightRemoteDataManager.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		ED18E8B02B2797AE008A49AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ED18E8BB2B2798C9008A49AF /* HomeFlightPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ED18E8B12B2797C0008A49AF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		ED18E8B22B2797C9008A49AF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				ED18E8B52B279867008A49AF /* HomeFlightRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		ED18E8BD2B27992D008A49AF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ED18E8BE2B279946008A49AF /* HomeFlightProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		ED77495F2B26C15F0012F560 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +132,7 @@
 		ED77496A2B26C15F0012F560 /* AMDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				ED18E8AD2B27978C008A49AF /* HomeFlight */,
 				ED77496B2B26C15F0012F560 /* AppDelegate.swift */,
 				ED77496D2B26C15F0012F560 /* SceneDelegate.swift */,
 				ED77496F2B26C15F0012F560 /* ViewController.swift */,
@@ -128,6 +205,7 @@
 				ED7749782B26C1600012F560 /* LaunchScreen.storyboard in Resources */,
 				ED7749752B26C1600012F560 /* Assets.xcassets in Resources */,
 				ED7749732B26C15F0012F560 /* Main.storyboard in Resources */,
+				ED18E8C12B279F05008A49AF /* HomeFlight.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED18E8B62B279867008A49AF /* HomeFlightRouter.swift in Sources */,
 				ED7749702B26C15F0012F560 /* ViewController.swift in Sources */,
 				ED77496C2B26C15F0012F560 /* AppDelegate.swift in Sources */,
+				ED18E8BC2B2798C9008A49AF /* HomeFlightPresenter.swift in Sources */,
+				ED18E8B42B2797FD008A49AF /* HomeFlight.swift in Sources */,
+				ED18E8BF2B279947008A49AF /* HomeFlightProtocols.swift in Sources */,
+				ED18E8BA2B2798AE008A49AF /* HomeFlightRemoteDataManager.swift in Sources */,
 				ED77496E2B26C15F0012F560 /* SceneDelegate.swift in Sources */,
+				ED18E8B82B279896008A49AF /* HomeFlightInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

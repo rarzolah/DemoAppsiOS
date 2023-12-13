@@ -72,16 +72,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fky-ow-5bT" userLabel="ContentBodyView">
-                                <rect key="frame" x="16" y="289" width="361" height="529"/>
+                                <rect key="frame" x="16" y="257.66666666666669" width="361" height="560.33333333333326"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-g0-dgy">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="529"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="560.33333333333337"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-cD-EYi" userLabel="Container">
-                                                <rect key="frame" x="0.0" y="0.0" width="361" height="529"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="560.33333333333337"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-Cm-Tux">
-                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="529"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KYI-Cm-Tux">
+                                                        <rect key="frame" x="0.0" y="0.0" width="361" height="560.33333333333337"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                 </subviews>
@@ -124,7 +124,7 @@
                             <constraint firstItem="YXW-M3-w2Q" firstAttribute="centerX" secondItem="FvV-gQ-LGT" secondAttribute="centerX" id="Gap-fR-1MK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FvV-gQ-LGT" secondAttribute="trailing" id="NZk-Ta-klz"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fky-ow-5bT" secondAttribute="trailing" constant="16" id="U2J-hN-s1g"/>
-                            <constraint firstItem="Fky-ow-5bT" firstAttribute="top" secondItem="YXW-M3-w2Q" secondAttribute="bottom" constant="71.333333333333343" id="YBk-NH-hKR"/>
+                            <constraint firstItem="Fky-ow-5bT" firstAttribute="top" secondItem="YXW-M3-w2Q" secondAttribute="bottom" constant="40" id="YBk-NH-hKR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Fky-ow-5bT" secondAttribute="bottom" id="ZC4-yi-TVL"/>
                             <constraint firstItem="YXW-M3-w2Q" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="181" id="k9h-VE-So6"/>
                             <constraint firstItem="Fky-ow-5bT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="uGv-Es-tsH"/>

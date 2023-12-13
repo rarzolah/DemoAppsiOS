@@ -12,6 +12,7 @@ protocol HomeFlightViewProtocol: AnyObject {
     /// Presenter -> View
     var presenter: HomeFlightPresenterProtocol? { get set }
     
+    func loadRemoteDataCodes(with step: SegmentedTitles) -> [UIView]
     //func reloadCollectionViewData()
     //func reloadCollectionViewSearchedData()
     //func catchResponse(withMessage: String?)

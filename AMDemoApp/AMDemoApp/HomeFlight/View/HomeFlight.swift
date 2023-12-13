@@ -25,6 +25,7 @@ class HomeFlight: UIViewController{
     
     var presenter: HomeFlightPresenterProtocol?
     var viewsToMainStack: [UIView] = []
+    let datePicker = UIDatePicker()
     
     override func viewDidLoad() {
         super.viewDidLoad()

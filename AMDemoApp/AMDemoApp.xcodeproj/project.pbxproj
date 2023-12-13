@@ -205,7 +205,6 @@
 				EDB7987F2B28E8F60080363E /* AMComponents */,
 				EDBB53B52B27D47400174F42 /* AMFontResources */,
 				EDBB53B12B27CAFC00174F42 /* Colors.xcassets */,
-				EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */,
 			);
 			path = AMVisualComponents;
 			sourceTree = "<group>";
@@ -259,6 +258,7 @@
 		EDD26FEE2B29607300FDBB4A /* AMLabel */ = {
 			isa = PBXGroup;
 			children = (
+				EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */,
 				EDD26FEF2B29608400FDBB4A /* AMLabel.swift */,
 			);
 			path = AMLabel;

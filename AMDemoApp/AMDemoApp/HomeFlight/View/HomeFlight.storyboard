@@ -71,6 +71,11 @@
                                     <constraint firstAttribute="height" constant="36.670000000000002" id="k51-gb-RVP"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FYy-qo-GCg" customClass="AMFilterViewController" customModule="AMDemoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="225" width="130" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,6 +92,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FBP-Ic-O8C"/>
                     <connections>
+                        <outlet property="flightNumberLabel" destination="FYy-qo-GCg" id="g2g-cZ-vj4"/>
                         <outlet property="labelSubTitle" destination="GY9-rM-jA1" id="i28-oj-6tc"/>
                         <outlet property="labelTitle" destination="t9B-Xe-TPB" id="0x6-4y-bDj"/>
                         <outlet property="segmentedControl" destination="YXW-M3-w2Q" id="xe0-fN-gqx"/>
@@ -102,7 +108,7 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="AMLightGray">
-            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

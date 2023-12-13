@@ -34,8 +34,10 @@
 		EDD26FE82B293F3900FDBB4A /* AMFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FE72B293F3900FDBB4A /* AMFilterViewController.xib */; };
 		EDD26FEA2B29414A00FDBB4A /* AMFilterViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FE92B29414A00FDBB4A /* AMFilterViewData.swift */; };
 		EDD26FED2B295F2800FDBB4A /* NSMutableAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FEC2B295F2800FDBB4A /* NSMutableAttributedStringExtension.swift */; };
-		EDD26FF02B29608400FDBB4A /* AMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FEF2B29608400FDBB4A /* AMLabel.swift */; };
 		EDD26FF22B29633A00FDBB4A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FF12B29633A00FDBB4A /* UIFontExtension.swift */; };
+		EDD26FF42B29654400FDBB4A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FF32B29654400FDBB4A /* UIViewExtension.swift */; };
+		EDD26FF62B2A00C200FDBB4A /* AMComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FF52B2A00C200FDBB4A /* AMComponents.swift */; };
+		EDD26FF82B2A070400FDBB4A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FF72B2A070400FDBB4A /* UILabelExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,8 +70,10 @@
 		EDD26FE72B293F3900FDBB4A /* AMFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMFilterViewController.xib; sourceTree = "<group>"; };
 		EDD26FE92B29414A00FDBB4A /* AMFilterViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFilterViewData.swift; sourceTree = "<group>"; };
 		EDD26FEC2B295F2800FDBB4A /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
-		EDD26FEF2B29608400FDBB4A /* AMLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLabel.swift; sourceTree = "<group>"; };
 		EDD26FF12B29633A00FDBB4A /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		EDD26FF32B29654400FDBB4A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		EDD26FF52B2A00C200FDBB4A /* AMComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMComponents.swift; sourceTree = "<group>"; };
+		EDD26FF72B2A070400FDBB4A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 				EDD26FEB2B295EED00FDBB4A /* AMExtensions */,
 				EDD26FE42B293E9E00FDBB4A /* AMFilterView */,
 				EDB798802B28E9050080363E /* AMSegmentedControl */,
+				EDD26FF52B2A00C200FDBB4A /* AMComponents.swift */,
 			);
 			path = AMComponents;
 			sourceTree = "<group>";
@@ -251,6 +256,8 @@
 			children = (
 				EDD26FEC2B295F2800FDBB4A /* NSMutableAttributedStringExtension.swift */,
 				EDD26FF12B29633A00FDBB4A /* UIFontExtension.swift */,
+				EDD26FF32B29654400FDBB4A /* UIViewExtension.swift */,
+				EDD26FF72B2A070400FDBB4A /* UILabelExtension.swift */,
 			);
 			path = AMExtensions;
 			sourceTree = "<group>";
@@ -259,7 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */,
-				EDD26FEF2B29608400FDBB4A /* AMLabel.swift */,
 			);
 			path = AMLabel;
 			sourceTree = "<group>";
@@ -345,17 +351,19 @@
 			files = (
 				EDD26FF22B29633A00FDBB4A /* UIFontExtension.swift in Sources */,
 				ED18E8B62B279867008A49AF /* HomeFlightRouter.swift in Sources */,
-				EDD26FF02B29608400FDBB4A /* AMLabel.swift in Sources */,
 				EDD26FED2B295F2800FDBB4A /* NSMutableAttributedStringExtension.swift in Sources */,
+				EDD26FF82B2A070400FDBB4A /* UILabelExtension.swift in Sources */,
 				ED7749702B26C15F0012F560 /* ViewController.swift in Sources */,
 				EDB798842B28E95D0080363E /* AMSegmentedControlData.swift in Sources */,
 				ED77496C2B26C15F0012F560 /* AppDelegate.swift in Sources */,
 				ED18E8BC2B2798C9008A49AF /* HomeFlightPresenter.swift in Sources */,
 				ED18E8B42B2797FD008A49AF /* HomeFlight.swift in Sources */,
+				EDD26FF62B2A00C200FDBB4A /* AMComponents.swift in Sources */,
 				ED18E8BF2B279947008A49AF /* HomeFlightProtocols.swift in Sources */,
 				EDBB53B42B27D41A00174F42 /* AMLabelStyles.swift in Sources */,
 				ED18E8BA2B2798AE008A49AF /* HomeFlightRemoteDataManager.swift in Sources */,
 				EDD26FEA2B29414A00FDBB4A /* AMFilterViewData.swift in Sources */,
+				EDD26FF42B29654400FDBB4A /* UIViewExtension.swift in Sources */,
 				EDD26FD42B29006A00FDBB4A /* FlightEntity.swift in Sources */,
 				ED77496E2B26C15F0012F560 /* SceneDelegate.swift in Sources */,
 				EDD26FE62B293EC600FDBB4A /* AMFilterViewController.swift in Sources */,

@@ -12,51 +12,53 @@
             <connections>
                 <outlet property="contentView" destination="efu-26-2qH" id="mrP-lE-IKl"/>
                 <outlet property="imageFilter" destination="I1w-mz-QN4" id="coc-Ud-LlX"/>
-                <outlet property="titleFlight" destination="44A-UB-tLJ" id="Dub-Y3-WmH"/>
-                <outlet property="titleLabel" destination="KFR-fm-CBV" id="NBg-ey-Vuk"/>
+                <outlet property="titleFlight" destination="44A-UB-tLJ" id="Oop-uv-E3O"/>
+                <outlet property="titleLabel" destination="KFR-fm-CBV" id="uLG-8Y-EZm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="efu-26-2qH">
-            <rect key="frame" x="0.0" y="0.0" width="570" height="90"/>
+            <rect key="frame" x="0.0" y="0.0" width="570" height="64"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFR-fm-CBV">
-                    <rect key="frame" x="20" y="9" width="530" height="21"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="21" id="FzS-UB-Akk"/>
-                    </constraints>
+                    <rect key="frame" x="30" y="5" width="520" height="29"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="bha-El-gHo">
-                    <rect key="frame" x="20" y="38" width="515" height="45"/>
+                    <rect key="frame" x="30" y="36" width="505" height="18"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44A-UB-tLJ">
-                            <rect key="frame" x="0.0" y="0.0" width="434.66666666666669" height="45"/>
+                            <rect key="frame" x="0.0" y="0.0" width="424.66666666666669" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="XHz-C1-NRP"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1w-mz-QN4">
-                            <rect key="frame" x="465" y="0.0" width="50" height="45"/>
+                            <rect key="frame" x="455" y="0.0" width="50" height="18"/>
                         </imageView>
                     </subviews>
                     <constraints>
                         <constraint firstItem="I1w-mz-QN4" firstAttribute="leading" secondItem="44A-UB-tLJ" secondAttribute="trailing" constant="30.329999999999998" id="TBr-3u-q4K"/>
+                        <constraint firstAttribute="height" constant="18" id="kZV-hr-XqY"/>
                     </constraints>
                 </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="2r0-T4-Jme"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="bha-El-gHo" firstAttribute="top" secondItem="KFR-fm-CBV" secondAttribute="bottom" constant="8" id="7v9-6R-129"/>
+                <constraint firstItem="bha-El-gHo" firstAttribute="top" secondItem="KFR-fm-CBV" secondAttribute="bottom" constant="2" id="7v9-6R-129"/>
+                <constraint firstItem="bha-El-gHo" firstAttribute="top" secondItem="KFR-fm-CBV" secondAttribute="bottom" constant="2" id="TI1-gC-hQp"/>
                 <constraint firstItem="KFR-fm-CBV" firstAttribute="trailing" secondItem="efu-26-2qH" secondAttribute="trailingMargin" id="ZPL-dZ-Eqn"/>
-                <constraint firstItem="KFR-fm-CBV" firstAttribute="leading" secondItem="efu-26-2qH" secondAttribute="leadingMargin" id="asD-vY-pTt"/>
+                <constraint firstItem="KFR-fm-CBV" firstAttribute="leading" secondItem="efu-26-2qH" secondAttribute="leadingMargin" constant="10" id="asD-vY-pTt"/>
                 <constraint firstItem="KFR-fm-CBV" firstAttribute="leading" secondItem="bha-El-gHo" secondAttribute="leading" id="cbK-1i-6I2"/>
-                <constraint firstAttribute="bottom" secondItem="bha-El-gHo" secondAttribute="bottom" constant="7" id="fX7-pb-xKu"/>
-                <constraint firstItem="KFR-fm-CBV" firstAttribute="top" secondItem="efu-26-2qH" secondAttribute="top" constant="9" id="plT-MG-cxO"/>
+                <constraint firstAttribute="bottom" secondItem="bha-El-gHo" secondAttribute="bottom" constant="10" id="fX7-pb-xKu"/>
+                <constraint firstItem="KFR-fm-CBV" firstAttribute="top" secondItem="efu-26-2qH" secondAttribute="top" constant="5" id="plT-MG-cxO"/>
                 <constraint firstItem="KFR-fm-CBV" firstAttribute="trailing" secondItem="bha-El-gHo" secondAttribute="trailing" constant="15" id="u00-K4-Gob"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -8,11 +8,11 @@
 import UIKit
 
 public struct AMFilterViewData{
-    public var title: AMLabel
+    public var title: UILabel
     public var titleFlight: NSMutableAttributedString
     public var imageFilter: UIImage?
     
-    public init(title: AMLabel, titleFlight: NSMutableAttributedString, imageFilter: UIImage? = nil) {
+    public init(title: UILabel, titleFlight: NSMutableAttributedString, imageFilter: UIImage? = nil) {
         self.title = title
         self.titleFlight = titleFlight
         self.imageFilter = imageFilter

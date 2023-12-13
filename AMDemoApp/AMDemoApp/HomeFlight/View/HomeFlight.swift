@@ -20,6 +20,8 @@ class HomeFlight: UIViewController{
     }
     @IBOutlet weak var segmentedControl: AMSegmentedControl!
     
+    @IBOutlet weak var flightNumberLabel: AMFilterViewController!
+    
     
     var presenter: HomeFlightPresenterProtocol?
     
@@ -37,6 +39,13 @@ extension HomeFlight: AMSegmentedControlProtocol {
         let config = AMSegmentedControlModel(segments: segments, segmentedControlStyle: .´default´)
         self.segmentedControl.segmentedControlDelegate = self
         self.segmentedControl.setData(config: config)
+        
+        let mutableAttributedString = NSMutableAttributedString(string: "AM 500")
+        mutableAttributedString.colorForTextCustom("AM", with: .amLightGray, font: .titleFilterLabel)
+        mutableAttributedString.colorForTextCustom("500", with: .amBlack, font: .titleFilterLabel)
+        
+        let filterViewData = AMFilterViewData(title: UILabel.label(text: "Flight number", style: .titleFilter, textColor: .amBlack), titleFlight: mutableAttributedString)
+        flightNumberLabel.initConfig(data: filterViewData)
         
         presenter?.loadingView()
     }

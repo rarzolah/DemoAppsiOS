@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - SegmentedTitle
-enum SegmentedTitle: String {
+// MARK: - SegmentedTitles
+enum SegmentedTitles: String {
     case flightNumber
     case destination
     
@@ -18,6 +18,15 @@ enum SegmentedTitle: String {
             return "Flight Number"
         case .destination:
             return "Destination"
+        }
+    }
+    
+    var index: Int{
+        switch self {
+        case .flightNumber:
+            return 0
+        case .destination:
+            return 1
         }
     }
 }

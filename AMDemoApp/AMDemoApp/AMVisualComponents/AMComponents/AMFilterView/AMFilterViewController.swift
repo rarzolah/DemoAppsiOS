@@ -9,10 +9,14 @@ import UIKit
 
 public class AMFilterViewController: UIView{
     
-    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var contentView: UIView!{
+        didSet{
+            contentView.addLayerWithColor(cornerRadius: 10, borderWidth: 2, withColor: .amBlack)
+        }
+    }
     @IBOutlet weak var titleLabel: UILabel!{
         didSet{
-            titleLabel.font = UIFont.systemRegular(size: 14)
+            titleLabel.textColor = .amBlack
         }
     }
     @IBOutlet weak var titleFlight: UILabel!
@@ -36,6 +40,12 @@ public class AMFilterViewController: UIView{
     }
 
     public func initConfig(data: AMFilterViewData) {
-        titleLabel.text
+        titleLabel.text = data.title
+        titleFlight.attributedText = data.titleFlight
+        if let image = data.imageFilter{
+            imageFilter.image = image
+        }else{
+            imageFilter.isHidden = true
+        }
     }
 }

@@ -19,33 +19,15 @@ class HomeFlight: UIViewController{
         }
     }
     @IBOutlet weak var segmentedControl: AMSegmentedControl!
+    @IBOutlet weak var stackViewForm: UIStackView!
     
+    @IBOutlet weak var containerViewStack: UIView!
     
     var presenter: HomeFlightPresenterProtocol?
+    var viewsToMainStack: [UIView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
-}
-
-extension HomeFlight: AMSegmentedControlProtocol {
-    public func setupUI(){
-        view.backgroundColor = .amWhite
-        
-        let segments =  ["Flight Number", "Destination"]
-        let config = AMSegmentedControlModel(segments: segments, segmentedControlStyle: .´default´)
-        self.segmentedControl.segmentedControlDelegate = self
-        self.segmentedControl.setData(config: config)
-        
-        presenter?.loadingView()
-    }
-    
-    func selectedSegmentDelegate(to index: Int) {
-        print(index)
-    }
-}
-
-extension HomeFlight: HomeFlightViewProtocol {
-    
 }

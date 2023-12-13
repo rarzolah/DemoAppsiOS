@@ -14,7 +14,11 @@ public class AMFilterViewController: UIView{
             contentView.addLayerWithColor(cornerRadius: 10, borderWidth: 2, withColor: .amBlack)
         }
     }
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!{
+        didSet{
+            titleLabel.textColor = .amBlack
+        }
+    }
     @IBOutlet weak var titleFlight: UILabel!
     @IBOutlet weak var imageFilter: UIImageView!
     
@@ -36,7 +40,7 @@ public class AMFilterViewController: UIView{
     }
 
     public func initConfig(data: AMFilterViewData) {
-        titleLabel = data.title
+        titleLabel.text = data.title
         titleFlight.attributedText = data.titleFlight
         if let image = data.imageFilter{
             imageFilter.image = image

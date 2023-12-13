@@ -24,9 +24,6 @@
 		EDB798842B28E95D0080363E /* AMSegmentedControlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB798832B28E95D0080363E /* AMSegmentedControlData.swift */; };
 		EDBB53B22B27CAFC00174F42 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53B12B27CAFC00174F42 /* Colors.xcassets */; };
 		EDBB53B42B27D41A00174F42 /* AMLabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */; };
-		EDBB53BD2B27DDE300174F42 /* Garnett-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53BA2B27DDE300174F42 /* Garnett-Bold.ttf */; };
-		EDBB53BE2B27DDE300174F42 /* Garnett-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53BB2B27DDE300174F42 /* Garnett-Semibold.ttf */; };
-		EDBB53BF2B27DDE300174F42 /* Garnett-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53BC2B27DDE300174F42 /* Garnett-Regular.ttf */; };
 		EDD26FD42B29006A00FDBB4A /* FlightEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FD32B29006900FDBB4A /* FlightEntity.swift */; };
 		EDD26FD82B29029A00FDBB4A /* NumerodeVueloResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FD62B29029A00FDBB4A /* NumerodeVueloResponse.json */; };
 		EDD26FD92B29029A00FDBB4A /* OrigenDestinoResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FD72B29029A00FDBB4A /* OrigenDestinoResponse.json */; };
@@ -38,6 +35,11 @@
 		EDD26FF42B29654400FDBB4A /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FF32B29654400FDBB4A /* UIViewExtension.swift */; };
 		EDD26FF62B2A00C200FDBB4A /* AMComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FF52B2A00C200FDBB4A /* AMComponents.swift */; };
 		EDD26FF82B2A070400FDBB4A /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FF72B2A070400FDBB4A /* UILabelExtension.swift */; };
+		EDD26FFE2B2A17DC00FDBB4A /* Garnett-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FFB2B2A17DC00FDBB4A /* Garnett-Regular.ttf */; };
+		EDD26FFF2B2A17DC00FDBB4A /* Garnett-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FFC2B2A17DC00FDBB4A /* Garnett-Semibold.ttf */; };
+		EDD270002B2A17DC00FDBB4A /* Garnett-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FFD2B2A17DC00FDBB4A /* Garnett-Bold.ttf */; };
+		EDD270022B2A2EA400FDBB4A /* HomeFlightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD270012B2A2EA400FDBB4A /* HomeFlightHelper.swift */; };
+		EDD270042B2A300800FDBB4A /* AMGenericEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD270032B2A300800FDBB4A /* AMGenericEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,9 +62,6 @@
 		EDB798832B28E95D0080363E /* AMSegmentedControlData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMSegmentedControlData.swift; sourceTree = "<group>"; };
 		EDBB53B12B27CAFC00174F42 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLabelStyles.swift; sourceTree = "<group>"; };
-		EDBB53BA2B27DDE300174F42 /* Garnett-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Bold.ttf"; sourceTree = "<group>"; };
-		EDBB53BB2B27DDE300174F42 /* Garnett-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Semibold.ttf"; sourceTree = "<group>"; };
-		EDBB53BC2B27DDE300174F42 /* Garnett-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Regular.ttf"; sourceTree = "<group>"; };
 		EDD26FD32B29006900FDBB4A /* FlightEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightEntity.swift; sourceTree = "<group>"; };
 		EDD26FD62B29029A00FDBB4A /* NumerodeVueloResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NumerodeVueloResponse.json; sourceTree = "<group>"; };
 		EDD26FD72B29029A00FDBB4A /* OrigenDestinoResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OrigenDestinoResponse.json; sourceTree = "<group>"; };
@@ -74,6 +73,11 @@
 		EDD26FF32B29654400FDBB4A /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		EDD26FF52B2A00C200FDBB4A /* AMComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMComponents.swift; sourceTree = "<group>"; };
 		EDD26FF72B2A070400FDBB4A /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		EDD26FFB2B2A17DC00FDBB4A /* Garnett-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Regular.ttf"; sourceTree = "<group>"; };
+		EDD26FFC2B2A17DC00FDBB4A /* Garnett-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Semibold.ttf"; sourceTree = "<group>"; };
+		EDD26FFD2B2A17DC00FDBB4A /* Garnett-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Bold.ttf"; sourceTree = "<group>"; };
+		EDD270012B2A2EA400FDBB4A /* HomeFlightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlightHelper.swift; sourceTree = "<group>"; };
+		EDD270032B2A300800FDBB4A /* AMGenericEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGenericEnums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			children = (
 				ED18E8B32B2797FD008A49AF /* HomeFlight.swift */,
 				ED18E8C02B279F05008A49AF /* HomeFlight.storyboard */,
+				EDD270012B2A2EA400FDBB4A /* HomeFlightHelper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				EDD26FE42B293E9E00FDBB4A /* AMFilterView */,
 				EDB798802B28E9050080363E /* AMSegmentedControl */,
 				EDD26FF52B2A00C200FDBB4A /* AMComponents.swift */,
+				EDD270032B2A300800FDBB4A /* AMGenericEnums.swift */,
 			);
 			path = AMComponents;
 			sourceTree = "<group>";
@@ -225,9 +231,9 @@
 		EDBB53B92B27DDD200174F42 /* Garnett */ = {
 			isa = PBXGroup;
 			children = (
-				EDBB53BA2B27DDE300174F42 /* Garnett-Bold.ttf */,
-				EDBB53BC2B27DDE300174F42 /* Garnett-Regular.ttf */,
-				EDBB53BB2B27DDE300174F42 /* Garnett-Semibold.ttf */,
+				EDD26FFD2B2A17DC00FDBB4A /* Garnett-Bold.ttf */,
+				EDD26FFB2B2A17DC00FDBB4A /* Garnett-Regular.ttf */,
+				EDD26FFC2B2A17DC00FDBB4A /* Garnett-Semibold.ttf */,
 			);
 			path = Garnett;
 			sourceTree = "<group>";
@@ -328,16 +334,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDBB53BE2B27DDE300174F42 /* Garnett-Semibold.ttf in Resources */,
 				EDBB53B22B27CAFC00174F42 /* Colors.xcassets in Resources */,
+				EDD270002B2A17DC00FDBB4A /* Garnett-Bold.ttf in Resources */,
 				EDD26FD82B29029A00FDBB4A /* NumerodeVueloResponse.json in Resources */,
+				EDD26FFE2B2A17DC00FDBB4A /* Garnett-Regular.ttf in Resources */,
 				ED7749782B26C1600012F560 /* LaunchScreen.storyboard in Resources */,
-				EDBB53BF2B27DDE300174F42 /* Garnett-Regular.ttf in Resources */,
 				ED7749752B26C1600012F560 /* Assets.xcassets in Resources */,
+				EDD26FFF2B2A17DC00FDBB4A /* Garnett-Semibold.ttf in Resources */,
 				EDD26FE82B293F3900FDBB4A /* AMFilterViewController.xib in Resources */,
 				ED7749732B26C15F0012F560 /* Main.storyboard in Resources */,
 				ED18E8C12B279F05008A49AF /* HomeFlight.storyboard in Resources */,
-				EDBB53BD2B27DDE300174F42 /* Garnett-Bold.ttf in Resources */,
 				EDD26FD92B29029A00FDBB4A /* OrigenDestinoResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +359,7 @@
 				ED18E8B62B279867008A49AF /* HomeFlightRouter.swift in Sources */,
 				EDD26FED2B295F2800FDBB4A /* NSMutableAttributedStringExtension.swift in Sources */,
 				EDD26FF82B2A070400FDBB4A /* UILabelExtension.swift in Sources */,
+				EDD270022B2A2EA400FDBB4A /* HomeFlightHelper.swift in Sources */,
 				ED7749702B26C15F0012F560 /* ViewController.swift in Sources */,
 				EDB798842B28E95D0080363E /* AMSegmentedControlData.swift in Sources */,
 				ED77496C2B26C15F0012F560 /* AppDelegate.swift in Sources */,
@@ -362,6 +369,7 @@
 				ED18E8BF2B279947008A49AF /* HomeFlightProtocols.swift in Sources */,
 				EDBB53B42B27D41A00174F42 /* AMLabelStyles.swift in Sources */,
 				ED18E8BA2B2798AE008A49AF /* HomeFlightRemoteDataManager.swift in Sources */,
+				EDD270042B2A300800FDBB4A /* AMGenericEnums.swift in Sources */,
 				EDD26FEA2B29414A00FDBB4A /* AMFilterViewData.swift in Sources */,
 				EDD26FF42B29654400FDBB4A /* UIViewExtension.swift in Sources */,
 				EDD26FD42B29006A00FDBB4A /* FlightEntity.swift in Sources */,

@@ -11,14 +11,10 @@ public enum AMLabelStyles{
 
     case title
     case subTitle
-    
     case titleButtonStep
-    
     case titleFilter
     case titleFilterLabel
-    
     case titleButtonMain
-    
     case titleLabelInformation
     
     var font: UIFont? {

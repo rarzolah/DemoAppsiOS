@@ -20,6 +20,17 @@
 		ED7749732B26C15F0012F560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7749712B26C15F0012F560 /* Main.storyboard */; };
 		ED7749752B26C1600012F560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED7749742B26C1600012F560 /* Assets.xcassets */; };
 		ED7749782B26C1600012F560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED7749762B26C1600012F560 /* LaunchScreen.storyboard */; };
+		EDB798822B28E92E0080363E /* AMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB798812B28E92E0080363E /* AMSegmentedControl.swift */; };
+		EDB798842B28E95D0080363E /* AMSegmentedControlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB798832B28E95D0080363E /* AMSegmentedControlData.swift */; };
+		EDBB53B22B27CAFC00174F42 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53B12B27CAFC00174F42 /* Colors.xcassets */; };
+		EDBB53B42B27D41A00174F42 /* AMLabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */; };
+		EDBB53B82B27DD1100174F42 /* AMFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB53B72B27DD1100174F42 /* AMFontExtension.swift */; };
+		EDBB53BD2B27DDE300174F42 /* Garnett-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53BA2B27DDE300174F42 /* Garnett-Bold.ttf */; };
+		EDBB53BE2B27DDE300174F42 /* Garnett-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53BB2B27DDE300174F42 /* Garnett-Semibold.ttf */; };
+		EDBB53BF2B27DDE300174F42 /* Garnett-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53BC2B27DDE300174F42 /* Garnett-Regular.ttf */; };
+		EDD26FD42B29006A00FDBB4A /* FlightEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FD32B29006900FDBB4A /* FlightEntity.swift */; };
+		EDD26FD82B29029A00FDBB4A /* NumerodeVueloResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FD62B29029A00FDBB4A /* NumerodeVueloResponse.json */; };
+		EDD26FD92B29029A00FDBB4A /* OrigenDestinoResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FD72B29029A00FDBB4A /* OrigenDestinoResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +49,17 @@
 		ED7749742B26C1600012F560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED7749772B26C1600012F560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED7749792B26C1600012F560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB798812B28E92E0080363E /* AMSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMSegmentedControl.swift; sourceTree = "<group>"; };
+		EDB798832B28E95D0080363E /* AMSegmentedControlData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMSegmentedControlData.swift; sourceTree = "<group>"; };
+		EDBB53B12B27CAFC00174F42 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLabelStyles.swift; sourceTree = "<group>"; };
+		EDBB53B72B27DD1100174F42 /* AMFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFontExtension.swift; sourceTree = "<group>"; };
+		EDBB53BA2B27DDE300174F42 /* Garnett-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Bold.ttf"; sourceTree = "<group>"; };
+		EDBB53BB2B27DDE300174F42 /* Garnett-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Semibold.ttf"; sourceTree = "<group>"; };
+		EDBB53BC2B27DDE300174F42 /* Garnett-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Garnett-Regular.ttf"; sourceTree = "<group>"; };
+		EDD26FD32B29006900FDBB4A /* FlightEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightEntity.swift; sourceTree = "<group>"; };
+		EDD26FD62B29029A00FDBB4A /* NumerodeVueloResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NumerodeVueloResponse.json; sourceTree = "<group>"; };
+		EDD26FD72B29029A00FDBB4A /* OrigenDestinoResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OrigenDestinoResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +115,7 @@
 		ED18E8B12B2797C0008A49AF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				EDD26FD32B29006900FDBB4A /* FlightEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -132,6 +155,8 @@
 		ED77496A2B26C15F0012F560 /* AMDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				EDD26FD52B29027500FDBB4A /* AMRemoteDataResource */,
+				EDBB53B02B27CAB600174F42 /* AMVisualComponents */,
 				ED18E8AD2B27978C008A49AF /* HomeFlight */,
 				ED77496B2B26C15F0012F560 /* AppDelegate.swift */,
 				ED77496D2B26C15F0012F560 /* SceneDelegate.swift */,
@@ -142,6 +167,70 @@
 				ED7749792B26C1600012F560 /* Info.plist */,
 			);
 			path = AMDemoApp;
+			sourceTree = "<group>";
+		};
+		EDB7987F2B28E8F60080363E /* AMComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EDB798802B28E9050080363E /* AMSegmentedControl */,
+			);
+			path = AMComponents;
+			sourceTree = "<group>";
+		};
+		EDB798802B28E9050080363E /* AMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				EDB798812B28E92E0080363E /* AMSegmentedControl.swift */,
+				EDB798832B28E95D0080363E /* AMSegmentedControlData.swift */,
+			);
+			path = AMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		EDBB53B02B27CAB600174F42 /* AMVisualComponents */ = {
+			isa = PBXGroup;
+			children = (
+				EDB7987F2B28E8F60080363E /* AMComponents */,
+				EDBB53B52B27D47400174F42 /* AMFontResources */,
+				EDBB53B12B27CAFC00174F42 /* Colors.xcassets */,
+				EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */,
+			);
+			path = AMVisualComponents;
+			sourceTree = "<group>";
+		};
+		EDBB53B52B27D47400174F42 /* AMFontResources */ = {
+			isa = PBXGroup;
+			children = (
+				EDBB53B92B27DDD200174F42 /* Garnett */,
+				EDBB53B62B27DCEA00174F42 /* AMExtensions */,
+			);
+			path = AMFontResources;
+			sourceTree = "<group>";
+		};
+		EDBB53B62B27DCEA00174F42 /* AMExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDBB53B72B27DD1100174F42 /* AMFontExtension.swift */,
+			);
+			path = AMExtensions;
+			sourceTree = "<group>";
+		};
+		EDBB53B92B27DDD200174F42 /* Garnett */ = {
+			isa = PBXGroup;
+			children = (
+				EDBB53BA2B27DDE300174F42 /* Garnett-Bold.ttf */,
+				EDBB53BC2B27DDE300174F42 /* Garnett-Regular.ttf */,
+				EDBB53BB2B27DDE300174F42 /* Garnett-Semibold.ttf */,
+			);
+			path = Garnett;
+			sourceTree = "<group>";
+		};
+		EDD26FD52B29027500FDBB4A /* AMRemoteDataResource */ = {
+			isa = PBXGroup;
+			children = (
+				EDD26FD62B29029A00FDBB4A /* NumerodeVueloResponse.json */,
+				EDD26FD72B29029A00FDBB4A /* OrigenDestinoResponse.json */,
+			);
+			path = AMRemoteDataResource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,10 +291,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBB53BE2B27DDE300174F42 /* Garnett-Semibold.ttf in Resources */,
+				EDBB53B22B27CAFC00174F42 /* Colors.xcassets in Resources */,
+				EDD26FD82B29029A00FDBB4A /* NumerodeVueloResponse.json in Resources */,
 				ED7749782B26C1600012F560 /* LaunchScreen.storyboard in Resources */,
+				EDBB53BF2B27DDE300174F42 /* Garnett-Regular.ttf in Resources */,
 				ED7749752B26C1600012F560 /* Assets.xcassets in Resources */,
 				ED7749732B26C15F0012F560 /* Main.storyboard in Resources */,
 				ED18E8C12B279F05008A49AF /* HomeFlight.storyboard in Resources */,
+				EDBB53BD2B27DDE300174F42 /* Garnett-Bold.ttf in Resources */,
+				EDD26FD92B29029A00FDBB4A /* OrigenDestinoResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,14 +311,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDBB53B82B27DD1100174F42 /* AMFontExtension.swift in Sources */,
 				ED18E8B62B279867008A49AF /* HomeFlightRouter.swift in Sources */,
 				ED7749702B26C15F0012F560 /* ViewController.swift in Sources */,
+				EDB798842B28E95D0080363E /* AMSegmentedControlData.swift in Sources */,
 				ED77496C2B26C15F0012F560 /* AppDelegate.swift in Sources */,
 				ED18E8BC2B2798C9008A49AF /* HomeFlightPresenter.swift in Sources */,
 				ED18E8B42B2797FD008A49AF /* HomeFlight.swift in Sources */,
 				ED18E8BF2B279947008A49AF /* HomeFlightProtocols.swift in Sources */,
+				EDBB53B42B27D41A00174F42 /* AMLabelStyles.swift in Sources */,
 				ED18E8BA2B2798AE008A49AF /* HomeFlightRemoteDataManager.swift in Sources */,
+				EDD26FD42B29006A00FDBB4A /* FlightEntity.swift in Sources */,
 				ED77496E2B26C15F0012F560 /* SceneDelegate.swift in Sources */,
+				EDB798822B28E92E0080363E /* AMSegmentedControl.swift in Sources */,
 				ED18E8B82B279896008A49AF /* HomeFlightInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

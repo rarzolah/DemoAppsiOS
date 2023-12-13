@@ -8,14 +8,21 @@
 import Foundation
 
 class HomeFlightInteractor: HomeFlightInteractorInputProtocol{
+    
     var presenter: HomeFlightInteractorOutputProtocol?
     
     var remoteDatamanager: HomeFlightRemoteDataManagerInputProtocol?
     
-    
+    func getDemoData(){
+        remoteDatamanager?.getDemoData()
+    }
 }
 
 extension HomeFlightInteractor: HomeFlightRemoteDataManagerOutputProtocol{
+    func pushFlightsData(flightData: [FlightStatusCollection]) {
+
+    }
+    
     func catchResponse(withMessage: String) {
         
     }

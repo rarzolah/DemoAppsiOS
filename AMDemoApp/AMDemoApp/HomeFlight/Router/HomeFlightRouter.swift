@@ -11,6 +11,7 @@ class HomeFlightRouter: HomeFlightRouterProtocol {
 
     // MARK: - Create Module HomeFlight
     class func createHomeFlightModule() -> UIViewController {
+        UIFont.registerFont()
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "HomeFlightID")
         if let view = navController.children.first as? HomeFlight {
             let presenter: HomeFlightPresenterProtocol & HomeFlightInteractorOutputProtocol = HomeFlightPresenter()

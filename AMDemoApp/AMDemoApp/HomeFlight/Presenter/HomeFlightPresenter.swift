@@ -8,13 +8,17 @@
 import Foundation
 
 class HomeFlightPresenter: HomeFlightPresenterProtocol{
+
+    
     var view: HomeFlightViewProtocol?
     
     var interactor: HomeFlightInteractorInputProtocol?
     
     var router: HomeFlightRouterProtocol?
     
-
+    func loadingView() {
+        interactor?.getDemoData()
+    }
 }
 
 extension HomeFlightPresenter: HomeFlightInteractorOutputProtocol{

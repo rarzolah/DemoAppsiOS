@@ -31,7 +31,7 @@ protocol HomeFlightPresenterProtocol: AnyObject {
     var router: HomeFlightRouterProtocol? { get set }
     //var selectedCategory: MovieCategory? { get set }
     
-    //func loadingView()
+    func loadingView()
     //func getMovieCount() -> Int
     //func getMovie(indexPathRow: Int) -> Movie
     
@@ -56,6 +56,7 @@ protocol HomeFlightInteractorInputProtocol: AnyObject {
     var presenter: HomeFlightInteractorOutputProtocol? { get set }
     var remoteDatamanager: HomeFlightRemoteDataManagerInputProtocol? { get set }
     
+    func getDemoData()
     //func getMovies(categoryMovieType: MovieCategory)
     //func getSearchedMovies(searchTerm: String)
     //func getInformationMovie(idMovie: Int)
@@ -64,6 +65,8 @@ protocol HomeFlightInteractorInputProtocol: AnyObject {
 protocol HomeFlightRemoteDataManagerInputProtocol: AnyObject {
     /// Interactor -> RemoteDataManager
     var remoteRequestHandler: HomeFlightRemoteDataManagerOutputProtocol? { get set }
+    
+    func getDemoData()
     //func getMovies(categoryMovieType: MovieCategory)
     //func getSearchedMovies(searchTerm: String)
     //func getInformationMovie(idMovie: Int)
@@ -71,6 +74,8 @@ protocol HomeFlightRemoteDataManagerInputProtocol: AnyObject {
 
 protocol HomeFlightRemoteDataManagerOutputProtocol: AnyObject {
     /// RemoteDataManager -> Interactor
+    ///
+    func pushFlightsData(flightData: [FlightStatusCollection])
     //func pushMoviesData(moviesData: [Movie])
     //func pushSearchedMoviesData(moviesData: [Movie])
     //func pushInformationMovieData(movieData: InformationMovie)

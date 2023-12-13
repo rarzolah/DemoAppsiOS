@@ -120,6 +120,7 @@ extension HomeFlight {
         buttonSearch.backgroundColor = .amBlack
         buttonSearch.addLayerWithColor(cornerRadius: 10, borderWidth: 2, withColor: .amBlack)
         buttonSearch.setTitleColor(.amWhite, for: .normal)
+        buttonSearch.addTarget(self, action:#selector(pushView), for: .touchUpInside)
         
         viewsToMainStack.append(buttonSearch)
         
@@ -136,6 +137,10 @@ extension HomeFlight {
         viewsToMainStack.append(labelCantFind)
         
         return viewsToMainStack
+    }
+    
+    @objc func pushView(sender:UIButton){
+        self.navigationController?.pushViewController(SearchFlightRouter.createSearchFlightModule(), animated: true)
     }
 }
 

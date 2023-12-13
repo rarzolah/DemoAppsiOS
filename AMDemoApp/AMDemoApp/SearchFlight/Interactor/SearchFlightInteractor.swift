@@ -6,3 +6,24 @@
 //
 
 import Foundation
+
+class SearchFlightInteractor: SearchFlightInteractorInputProtocol{
+    
+    var presenter: SearchFlightInteractorOutputProtocol?
+    
+    var remoteDatamanager: SearchFlightRemoteDataManagerInputProtocol?
+    
+    func getDemoData(){
+        remoteDatamanager?.getDemoData()
+    }
+}
+
+extension SearchFlightInteractor: SearchFlightRemoteDataManagerOutputProtocol{
+    func pushFlightsData(flightData: [FlightStatusCollection]) {
+
+    }
+    
+    func catchResponse(withMessage: String) {
+        
+    }
+}

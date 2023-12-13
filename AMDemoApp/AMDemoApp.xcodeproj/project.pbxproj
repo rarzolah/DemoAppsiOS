@@ -48,6 +48,7 @@
 		EDD2701A2B2A6F1600FDBB4A /* SearchFlightEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD270192B2A6F1600FDBB4A /* SearchFlightEntity.swift */; };
 		EDD2701C2B2A6F3500FDBB4A /* SearchFlightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2701B2B2A6F3500FDBB4A /* SearchFlightRouter.swift */; };
 		EDD2701E2B2A6F4800FDBB4A /* SearchFlightProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2701D2B2A6F4800FDBB4A /* SearchFlightProtocols.swift */; };
+		EDD270202B2A71BF00FDBB4A /* SearchFlightHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD2701F2B2A71BF00FDBB4A /* SearchFlightHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		EDD270192B2A6F1600FDBB4A /* SearchFlightEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightEntity.swift; sourceTree = "<group>"; };
 		EDD2701B2B2A6F3500FDBB4A /* SearchFlightRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightRouter.swift; sourceTree = "<group>"; };
 		EDD2701D2B2A6F4800FDBB4A /* SearchFlightProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightProtocols.swift; sourceTree = "<group>"; };
+		EDD2701F2B2A71BF00FDBB4A /* SearchFlightHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +313,7 @@
 			children = (
 				EDD2700F2B2A6EC200FDBB4A /* SearchFlight.swift */,
 				EDD270112B2A6EC800FDBB4A /* SearchFlight.storyboard */,
+				EDD2701F2B2A71BF00FDBB4A /* SearchFlightHelper.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				EDD26FF82B2A070400FDBB4A /* UILabelExtension.swift in Sources */,
 				EDD270022B2A2EA400FDBB4A /* HomeFlightHelper.swift in Sources */,
 				EDD2701A2B2A6F1600FDBB4A /* SearchFlightEntity.swift in Sources */,
+				EDD270202B2A71BF00FDBB4A /* SearchFlightHelper.swift in Sources */,
 				ED7749702B26C15F0012F560 /* ViewController.swift in Sources */,
 				EDD270142B2A6EE500FDBB4A /* SearchFlightInteractor.swift in Sources */,
 				EDB798842B28E95D0080363E /* AMSegmentedControlData.swift in Sources */,

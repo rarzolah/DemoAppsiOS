@@ -5,4 +5,15 @@
 //  Created by Roberto Arzola on 13/12/23.
 //
 
-import Foundation
+import UIKit
+
+class SearchFlight: UIViewController{
+ 
+    var presenter: SearchFlightPresenterProtocol?
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+}

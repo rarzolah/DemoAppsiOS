@@ -22,7 +22,7 @@ protocol HomeFlightRouterProtocol: AnyObject {
     /// Presenter -> Router
     static func createHomeFlightModule() -> UIViewController
     
-    //func goToInformationMovie(informationMovieData: InformationMovie, view: HomeFlightViewProtocol)
+    func goToSearchFlight(informationSearch: SearchData, view: HomeFlightViewProtocol)
 }
 
 protocol HomeFlightPresenterProtocol: AnyObject {

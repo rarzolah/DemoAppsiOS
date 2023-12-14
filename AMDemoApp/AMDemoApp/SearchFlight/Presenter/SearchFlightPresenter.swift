@@ -20,6 +20,6 @@ class SearchFlightPresenter: SearchFlightPresenterProtocol{
 
 extension SearchFlightPresenter: SearchFlightInteractorOutputProtocol{
     func catchResponse(withMessage: String) {
-        
+        print(withMessage)
     }
 }

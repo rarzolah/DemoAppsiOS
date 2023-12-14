@@ -9,9 +9,7 @@ import UIKit
 
 class SearchFlight: UIViewController{
  
-    
     var presenter: SearchFlightPresenterProtocol?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

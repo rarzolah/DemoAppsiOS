@@ -7,6 +7,16 @@
 
 import UIKit
 
+/**
+ Generic view to build a filter view
+ 
+ ```swift
+ let segments = ["Flight Number", "Destination"]
+ let config = AMSegmentedControlModel(segments: segments, segmentedControlStyle: .´default´)
+ self.segmentedControl.segmentedControlDelegate = self
+ self.segmentedControl.setData(config: config)
+ ```
+*/
 public class AMFilterViewController: UIView{
     
     @IBOutlet weak var contentView: UIView!{
@@ -39,6 +49,10 @@ public class AMFilterViewController: UIView{
         addSubview(contentView)
     }
 
+    /**
+     Use this init to custom data
+        - Parameter data: Data for the labels of the view
+     */
     public func initConfig(data: AMFilterViewData) {
         titleLabel.text = data.title
         titleFlight.attributedText = data.titleFlight

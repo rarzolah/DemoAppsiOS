@@ -11,18 +11,17 @@ import UIKit
 public protocol AMSegmentedControlProtocol: AnyObject {
     func selectedSegmentDelegate(to index: Int)
 }
-/// New segmentedControl
-///
-/// You can create a AMSegmentedControl using the
-/// func setData(config: AMSegmentedControlModel)
-///
-/// ```swift
-/// let segmentControl = AMSegmentedControl()
-/// let segments =  ["First", "Second", "Thrid", "Another", "Last"]
-/// let config = AMSegmentedControlModel(segments: segments,
-///                                             segmentedControlStyle: .´default´)
-/// segmentControl.setData(config: config)
-/// ```
+/**
+ New segmentedControl
+ 
+ You can create a AMSegmentedControl using the
+ 
+ ```swift
+ let segmentControl = AMSegmentedControl()
+ let segments =  ["First", "Second", "Thrid", "Another", "Last"]
+ let config = AMSegmentedControlModel(segments: segments, segmentedControlStyle: .´default´)
+ ```
+ */
 public class AMSegmentedControl: UIControl {
     //MARK: - UI
     private var buttons = [UIButton]()

@@ -7,6 +7,7 @@
 
 import UIKit
 
+///Public class to init the visual components
 public class AMComponents: NSObject{
     static let components = AMComponents()
     

@@ -10,7 +10,6 @@ import Foundation
 class HomeFlightInteractor: HomeFlightInteractorInputProtocol{
     
     var presenter: HomeFlightInteractorOutputProtocol?
-    
     var remoteDatamanager: HomeFlightRemoteDataManagerInputProtocol?
     
     func getDemoData(file: SegmentedTitles){
@@ -20,10 +19,10 @@ class HomeFlightInteractor: HomeFlightInteractorInputProtocol{
 
 extension HomeFlightInteractor: HomeFlightRemoteDataManagerOutputProtocol{
     func pushFlightsData(flightData: [FlightStatusCollection]) {
-
+        print(flightData)
     }
     
     func catchResponse(withMessage: String) {
-        
+        print(withMessage)
     }
 }

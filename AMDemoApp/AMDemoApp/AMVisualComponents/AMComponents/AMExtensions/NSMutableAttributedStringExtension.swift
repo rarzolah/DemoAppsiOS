@@ -8,7 +8,12 @@
 import UIKit
 
 public extension NSMutableAttributedString{
-    
+    /**
+     Function that customize a label text with an attributed
+        - Parameter textToFind: Thetext to find
+        - Parameter color: The uicolor to apply
+        - Parameter font: The label style font
+     */
     func colorForTextCustom(_ textToFind: String?, with color: UIColor, font: AMLabelStyles) {
         var range: NSRange = NSMakeRange(0, self.length)
         if let text = textToFind{

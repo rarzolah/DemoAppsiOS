@@ -11,9 +11,7 @@ class HomeFlightPresenter: HomeFlightPresenterProtocol{
 
     
     var view: HomeFlightViewProtocol?
-    
     var interactor: HomeFlightInteractorInputProtocol?
-    
     var router: HomeFlightRouterProtocol?
     
     func loadingView(file: SegmentedTitles) {
@@ -23,6 +21,6 @@ class HomeFlightPresenter: HomeFlightPresenterProtocol{
 
 extension HomeFlightPresenter: HomeFlightInteractorOutputProtocol{
     func catchResponse(withMessage: String) {
-        
+        print(withMessage)
     }
 }

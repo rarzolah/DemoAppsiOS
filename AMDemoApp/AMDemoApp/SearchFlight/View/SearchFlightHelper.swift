@@ -17,7 +17,7 @@ extension SearchFlight{
 
 extension SearchFlight: SearchFlightViewProtocol {
     func loadRemoteDataCodes(with step: SegmentedTitles) -> [UIView] {
-        var views: [UIView] = []
+        let views: [UIView] = []
         
         return views
     }

@@ -12,7 +12,7 @@ extension HomeFlight {
         view.backgroundColor = .amWhite
         loadSegmentedConfig()
         
-        presenter?.loadingView()
+        presenter?.loadingView(file: .flightNumber)
     }
     
     private func loadSegmentedConfig(){

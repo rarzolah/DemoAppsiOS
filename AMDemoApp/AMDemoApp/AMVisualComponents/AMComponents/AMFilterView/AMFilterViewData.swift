@@ -7,6 +7,7 @@
 
 import UIKit
 
+///Data to custom a filter view
 public struct AMFilterViewData{
     public var title: String
     public var titleFlight: NSMutableAttributedString

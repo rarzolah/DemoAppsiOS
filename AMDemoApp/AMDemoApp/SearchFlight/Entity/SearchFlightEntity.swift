@@ -7,6 +7,7 @@
 
 import Foundation
 
+///Data to search into the service manager
 struct SearchData{
     var flightNumber: String?
     var origin: String?

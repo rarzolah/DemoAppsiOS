@@ -11,10 +11,8 @@ extension HomeFlight {
     public func setupUI(){
         view.backgroundColor = .amWhite
         loadSegmentedConfig()
-        //showDatePicker()
         
-        //Consume servicio
-        presenter?.loadingView()
+        presenter?.loadingView(file: .flightNumber)
     }
     
     private func loadSegmentedConfig(){
@@ -33,6 +31,10 @@ extension HomeFlight {
                 stack.addArrangedSubview(view)
             }
             viewsToMainStack.append(stack)
+            addBottomViews().forEach { view in
+                viewsToMainStack.append(view)
+            }
+            
         case 1:
             loadRemoteDataCodes(with: .destination).forEach { view in
                 stack.addArrangedSubview(view)
@@ -46,12 +48,11 @@ extension HomeFlight {
 
             viewsToMainStack.append(createFilterView(data: flightViewDataDate, frame: CGRect(x: 0, y: 0, width: 215, height: 64)))
 
+            addBottomViews().forEach { view in
+                viewsToMainStack.append(view)
+            }
         default:
             break
-        }
-        
-        addBottomViews().forEach { view in
-            viewsToMainStack.append(view)
         }
         
         viewsToMainStack.forEach {
@@ -120,6 +121,7 @@ extension HomeFlight {
         buttonSearch.backgroundColor = .amBlack
         buttonSearch.addLayerWithColor(cornerRadius: 10, borderWidth: 2, withColor: .amBlack)
         buttonSearch.setTitleColor(.amWhite, for: .normal)
+        buttonSearch.addTarget(self, action:#selector(pushView), for: .touchUpInside)
         
         viewsToMainStack.append(buttonSearch)
         
@@ -136,6 +138,11 @@ extension HomeFlight {
         viewsToMainStack.append(labelCantFind)
         
         return viewsToMainStack
+    }
+    
+    @objc func pushView(sender: UIButton){
+        let search = SearchData(flightNumber: "55")
+        self.navigationController?.pushViewController(SearchFlightRouter.createSearchFlightModule(with: search, file: .destination), animated: true)
     }
 }
 

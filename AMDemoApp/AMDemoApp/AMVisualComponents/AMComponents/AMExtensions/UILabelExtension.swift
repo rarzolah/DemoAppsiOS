@@ -9,6 +9,13 @@ import UIKit
 
 public extension UILabel{
  
+    /**
+     Function returns an label with custom data
+        - Parameter text: The string data
+        - Parameter style: The label style
+        - Parameter textAlignment: The text alingment
+        - Parameter textColor: The color to the string data
+     */
     static func label(text: String, style: AMLabelStyles, textAlignment: NSTextAlignment = .left, textColor: UIColor) -> UILabel {
         let label = UILabel()
         label.text = text

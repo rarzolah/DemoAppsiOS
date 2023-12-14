@@ -8,10 +8,8 @@
 import UIKit
 
 class HomeFlightRouter: HomeFlightRouterProtocol {
-
     // MARK: - Create Module HomeFlight
     class func createHomeFlightModule() -> UIViewController {
-        //AMComponents.components.loadVisualComponents()
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "HomeFlightID")
         if let view = navController.children.first as? HomeFlight {
             let presenter: HomeFlightPresenterProtocol & HomeFlightInteractorOutputProtocol = HomeFlightPresenter()
@@ -36,9 +34,4 @@ class HomeFlightRouter: HomeFlightRouterProtocol {
     static var mainStoryboard: UIStoryboard {
         return UIStoryboard(name: "HomeFlight", bundle: .main)
     }
-
-    /**
-     Function that calls the Information movie view to show next.
-     */
-
 }

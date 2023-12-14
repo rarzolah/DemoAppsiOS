@@ -7,6 +7,7 @@
 
 import UIKit
 
+///Enum that contains the label styles
 public enum AMLabelStyles{
 
     case title

@@ -11,18 +11,16 @@ class HomeFlightPresenter: HomeFlightPresenterProtocol{
 
     
     var view: HomeFlightViewProtocol?
-    
     var interactor: HomeFlightInteractorInputProtocol?
-    
     var router: HomeFlightRouterProtocol?
     
-    func loadingView() {
-        interactor?.getDemoData()
+    func loadingView(file: SegmentedTitles) {
+        interactor?.getDemoData(file: file)
     }
 }
 
 extension HomeFlightPresenter: HomeFlightInteractorOutputProtocol{
     func catchResponse(withMessage: String) {
-        
+        print(withMessage)
     }
 }

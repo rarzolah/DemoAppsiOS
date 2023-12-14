@@ -24,6 +24,7 @@
 		EDB798842B28E95D0080363E /* AMSegmentedControlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB798832B28E95D0080363E /* AMSegmentedControlData.swift */; };
 		EDBB53B22B27CAFC00174F42 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBB53B12B27CAFC00174F42 /* Colors.xcassets */; };
 		EDBB53B42B27D41A00174F42 /* AMLabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */; };
+		EDBF5E522B2A83160060563B /* AMGenericStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBF5E512B2A83160060563B /* AMGenericStruct.swift */; };
 		EDD26FD42B29006A00FDBB4A /* FlightEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD26FD32B29006900FDBB4A /* FlightEntity.swift */; };
 		EDD26FD82B29029A00FDBB4A /* NumerodeVueloResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FD62B29029A00FDBB4A /* NumerodeVueloResponse.json */; };
 		EDD26FD92B29029A00FDBB4A /* OrigenDestinoResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EDD26FD72B29029A00FDBB4A /* OrigenDestinoResponse.json */; };
@@ -71,6 +72,7 @@
 		EDB798832B28E95D0080363E /* AMSegmentedControlData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMSegmentedControlData.swift; sourceTree = "<group>"; };
 		EDBB53B12B27CAFC00174F42 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EDBB53B32B27D41A00174F42 /* AMLabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLabelStyles.swift; sourceTree = "<group>"; };
+		EDBF5E512B2A83160060563B /* AMGenericStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGenericStruct.swift; sourceTree = "<group>"; };
 		EDD26FD32B29006900FDBB4A /* FlightEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightEntity.swift; sourceTree = "<group>"; };
 		EDD26FD62B29029A00FDBB4A /* NumerodeVueloResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NumerodeVueloResponse.json; sourceTree = "<group>"; };
 		EDD26FD72B29029A00FDBB4A /* OrigenDestinoResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OrigenDestinoResponse.json; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				EDB798802B28E9050080363E /* AMSegmentedControl */,
 				EDD26FF52B2A00C200FDBB4A /* AMComponents.swift */,
 				EDD270032B2A300800FDBB4A /* AMGenericEnums.swift */,
+				EDBF5E512B2A83160060563B /* AMGenericStruct.swift */,
 			);
 			path = AMComponents;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				ED18E8B62B279867008A49AF /* HomeFlightRouter.swift in Sources */,
 				EDD270182B2A6F0200FDBB4A /* SearchFlightPresenter.swift in Sources */,
 				EDD26FED2B295F2800FDBB4A /* NSMutableAttributedStringExtension.swift in Sources */,
+				EDBF5E522B2A83160060563B /* AMGenericStruct.swift in Sources */,
 				EDD26FF82B2A070400FDBB4A /* UILabelExtension.swift in Sources */,
 				EDD270022B2A2EA400FDBB4A /* HomeFlightHelper.swift in Sources */,
 				EDD2701A2B2A6F1600FDBB4A /* SearchFlightEntity.swift in Sources */,

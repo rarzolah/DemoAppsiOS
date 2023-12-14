@@ -13,8 +13,8 @@ class SearchFlightInteractor: SearchFlightInteractorInputProtocol{
     
     var remoteDatamanager: SearchFlightRemoteDataManagerInputProtocol?
     
-    func getDemoData(){
-        remoteDatamanager?.getDemoData()
+    func getDemoData(file: SegmentedTitles){
+        remoteDatamanager?.getDemoData(file: file)
     }
 }
 

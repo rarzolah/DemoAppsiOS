@@ -13,8 +13,8 @@ class HomeFlightInteractor: HomeFlightInteractorInputProtocol{
     
     var remoteDatamanager: HomeFlightRemoteDataManagerInputProtocol?
     
-    func getDemoData(){
-        remoteDatamanager?.getDemoData()
+    func getDemoData(file: SegmentedTitles){
+        remoteDatamanager?.getDemoData(file: file)
     }
 }
 

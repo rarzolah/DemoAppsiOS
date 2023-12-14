@@ -11,9 +11,7 @@ extension HomeFlight {
     public func setupUI(){
         view.backgroundColor = .amWhite
         loadSegmentedConfig()
-        //showDatePicker()
         
-        //Consume servicio
         presenter?.loadingView()
     }
     
@@ -33,6 +31,10 @@ extension HomeFlight {
                 stack.addArrangedSubview(view)
             }
             viewsToMainStack.append(stack)
+            addBottomViews().forEach { view in
+                viewsToMainStack.append(view)
+            }
+            
         case 1:
             loadRemoteDataCodes(with: .destination).forEach { view in
                 stack.addArrangedSubview(view)
@@ -46,12 +48,11 @@ extension HomeFlight {
 
             viewsToMainStack.append(createFilterView(data: flightViewDataDate, frame: CGRect(x: 0, y: 0, width: 215, height: 64)))
 
+            addBottomViews().forEach { view in
+                viewsToMainStack.append(view)
+            }
         default:
             break
-        }
-        
-        addBottomViews().forEach { view in
-            viewsToMainStack.append(view)
         }
         
         viewsToMainStack.forEach {
@@ -139,8 +140,9 @@ extension HomeFlight {
         return viewsToMainStack
     }
     
-    @objc func pushView(sender:UIButton){
-        self.navigationController?.pushViewController(SearchFlightRouter.createSearchFlightModule(), animated: true)
+    @objc func pushView(sender: UIButton){
+        let search = SearchData(flightNumber: "55")
+        self.navigationController?.pushViewController(SearchFlightRouter.createSearchFlightModule(with: search, file: .destination), animated: true)
     }
 }
 

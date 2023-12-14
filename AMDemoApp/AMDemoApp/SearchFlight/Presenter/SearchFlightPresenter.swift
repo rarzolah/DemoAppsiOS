@@ -8,16 +8,13 @@
 import Foundation
 
 class SearchFlightPresenter: SearchFlightPresenterProtocol{
-
-    
     var view: SearchFlightViewProtocol?
-    
     var interactor: SearchFlightInteractorInputProtocol?
-    
     var router: SearchFlightRouterProtocol?
+    var searchData: SearchData?
     
-    func loadingView() {
-        interactor?.getDemoData()
+    func loadingView(file: SegmentedTitles) {
+        interactor?.getDemoData(file: file)
     }
 }
 

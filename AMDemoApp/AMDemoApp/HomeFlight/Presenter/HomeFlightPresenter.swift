@@ -16,8 +16,8 @@ class HomeFlightPresenter: HomeFlightPresenterProtocol{
     
     var router: HomeFlightRouterProtocol?
     
-    func loadingView() {
-        interactor?.getDemoData()
+    func loadingView(file: SegmentedTitles) {
+        interactor?.getDemoData(file: file)
     }
 }
 

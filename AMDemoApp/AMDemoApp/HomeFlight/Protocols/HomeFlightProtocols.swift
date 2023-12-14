@@ -13,16 +13,11 @@ protocol HomeFlightViewProtocol: AnyObject {
     var presenter: HomeFlightPresenterProtocol? { get set }
     
     func loadRemoteDataCodes(with step: SegmentedTitles) -> [UIView]
-    //func reloadCollectionViewData()
-    //func reloadCollectionViewSearchedData()
-    //func catchResponse(withMessage: String?)
 }
 
 protocol HomeFlightRouterProtocol: AnyObject {
     /// Presenter -> Router
     static func createHomeFlightModule() -> UIViewController
-    
-    func goToSearchFlight(informationSearch: SearchData, view: HomeFlightViewProtocol)
 }
 
 protocol HomeFlightPresenterProtocol: AnyObject {
@@ -30,25 +25,12 @@ protocol HomeFlightPresenterProtocol: AnyObject {
     var view: HomeFlightViewProtocol? { get set }
     var interactor: HomeFlightInteractorInputProtocol? { get set }
     var router: HomeFlightRouterProtocol? { get set }
-    //var selectedCategory: MovieCategory? { get set }
     
-    func loadingView()
-    //func getMovieCount() -> Int
-    //func getMovie(indexPathRow: Int) -> Movie
-    
-    //func getSearchedMovieCount() -> Int
-    //func getSearchedMovie(indexPathRow: Int) -> Movie
-    
-    //func getSearchedMovies(searchTerm: String)
-    //func getInformationMovie(idMovie: Int)
+    func loadingView(file: SegmentedTitles)
 }
 
 protocol HomeFlightInteractorOutputProtocol: AnyObject {
     /// Interactor -> Presenter
-    //func pushMoviesData(moviesData: [Movie])
-    //func pushSearchedMoviesData(moviesData: [Movie])
-    //func pushInformationMovieData(movieData: InformationMovie)
-    
     func catchResponse(withMessage: String)
 }
 
@@ -57,29 +39,18 @@ protocol HomeFlightInteractorInputProtocol: AnyObject {
     var presenter: HomeFlightInteractorOutputProtocol? { get set }
     var remoteDatamanager: HomeFlightRemoteDataManagerInputProtocol? { get set }
     
-    func getDemoData()
-    //func getMovies(categoryMovieType: MovieCategory)
-    //func getSearchedMovies(searchTerm: String)
-    //func getInformationMovie(idMovie: Int)
+    func getDemoData(file: SegmentedTitles)
 }
 
 protocol HomeFlightRemoteDataManagerInputProtocol: AnyObject {
     /// Interactor -> RemoteDataManager
     var remoteRequestHandler: HomeFlightRemoteDataManagerOutputProtocol? { get set }
     
-    func getDemoData()
-    //func getMovies(categoryMovieType: MovieCategory)
-    //func getSearchedMovies(searchTerm: String)
-    //func getInformationMovie(idMovie: Int)
+    func getDemoData(file: SegmentedTitles)
 }
 
 protocol HomeFlightRemoteDataManagerOutputProtocol: AnyObject {
     /// RemoteDataManager -> Interactor
-    ///
     func pushFlightsData(flightData: [FlightStatusCollection])
-    //func pushMoviesData(moviesData: [Movie])
-    //func pushSearchedMoviesData(moviesData: [Movie])
-    //func pushInformationMovieData(movieData: InformationMovie)
-    
     func catchResponse(withMessage: String)
 }

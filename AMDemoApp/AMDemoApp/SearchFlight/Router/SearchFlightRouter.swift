@@ -10,7 +10,7 @@ import UIKit
 class SearchFlightRouter: SearchFlightRouterProtocol {
 
     // MARK: - Create Module SearchFlight
-    class func createSearchFlightModule(with searchData: SearchData) -> UIViewController {
+    class func createSearchFlightModule(with searchData: SearchData, file: SegmentedTitles) -> UIViewController {
         let navController = mainStoryboard.instantiateViewController(withIdentifier: "SearchFlightID")
         if let view = navController as? SearchFlight {
             let presenter: SearchFlightPresenterProtocol & SearchFlightInteractorOutputProtocol = SearchFlightPresenter()

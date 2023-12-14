@@ -10,6 +10,8 @@ import UIKit
 extension SearchFlight{
     public func setupUI(){
         view.backgroundColor = .amWhite
+        
+        presenter?.loadingView(file: .destination)
     }
 }
 

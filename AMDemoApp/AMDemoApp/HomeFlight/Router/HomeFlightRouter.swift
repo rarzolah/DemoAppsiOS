@@ -34,13 +34,4 @@ class HomeFlightRouter: HomeFlightRouterProtocol {
     static var mainStoryboard: UIStoryboard {
         return UIStoryboard(name: "HomeFlight", bundle: .main)
     }
-    
-    func goToSearchFlight(informationSearch: SearchData, view: HomeFlightViewProtocol) {
-        if let newView = view as? UIViewController {
-            DispatchQueue.main.async {
-                let searchResult = SearchFlightRouter.createSearchFlightModule(with: informationSearch)
-                newView.navigationController?.pushViewController(searchResult, animated: true)
-            }
-        }
-    }
 }

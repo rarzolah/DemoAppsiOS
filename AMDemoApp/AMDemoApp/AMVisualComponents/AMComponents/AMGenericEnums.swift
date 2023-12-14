@@ -29,4 +29,13 @@ enum SegmentedTitles: String {
             return 1
         }
     }
+    
+    var jsonFile: String{
+        switch self {
+        case .flightNumber:
+            return "NumerodeVueloResponse"
+        case .destination:
+            return "OrigenDestinoResponse"
+        }
+    }
 }
